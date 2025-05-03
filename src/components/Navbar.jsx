@@ -27,12 +27,18 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-5 sm:px-10 flex justify-between items-center">
         {/* Logo & Hamburger */}
         <div className="flex items-center justify-between w-full sm:w-auto">
-          <img src={Logo} alt="Logo" className="w-[100px]" />
+          <img src={Logo} alt="Logo" className="w-[110px] lg:w-[100px]" />
           <div className="sm:hidden cursor-pointer" onClick={toggleBar}>
             {isOpen ? (
-              <GrClose className="text-white text-3xl transition-all duration-300" />
+              <GrClose
+                className="text-white text-3xl transition-all duration-300"
+                size={50}
+              />
             ) : (
-              <VscThreeBars className="text-white text-3xl transition-all duration-300" />
+              <VscThreeBars
+                className="text-white text-3xl transition-all duration-300"
+                size={50}
+              />
             )}
           </div>
         </div>
