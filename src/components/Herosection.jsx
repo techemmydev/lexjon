@@ -2,11 +2,15 @@ import React, { useEffect } from "react";
 import Button from "../components/Button";
 import Image1 from "../assets/img/heroimage.png";
 import Image2 from "../assets/img/image.png";
+import OvalBackground from "../assets/img/Oval.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import FeaturedCourseImg from "../assets/img/Featured Courses.png";
 import { ArraysOfSDE } from "../data/Software_Digital";
 import Companieslogo from "./Companieslogo";
+import Products from "./Product";
+import Testimonial from "../components/Testimonial";
+import Contact from "../components/Contact";
 Button;
 const Herosection = () => {
   // Initialize AOS (Animate On Scroll) library
@@ -202,8 +206,32 @@ const Herosection = () => {
           </div>
         </div>
       </section>
+      <div data-aos-offset={middleOfViewport} data-aos="fade-right">
+        <Companieslogo />
+      </div>
 
-      <Companieslogo />
+      <div
+        className="relative w-full h-full flex flex-col justify-center items-center"
+        data-aos-offset={middleOfViewport}
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <img
+          src={OvalBackground}
+          alt=""
+          className="absolute sm:relative  inset-0 w-full h-full object-cover bottom-20"
+        />
+        <div
+          className="sm:absolute"
+          data-aos="flip-left"
+          data-aos-offset={middleOfViewport}
+        >
+          <Products />
+        </div>
+      </div>
+
+      <Testimonial title="Testimonials" />
+      <Contact />
     </>
   );
 };

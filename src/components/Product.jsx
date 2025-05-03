@@ -5,7 +5,7 @@ import phone1 from "../assets/img/photo1.svg";
 import phone2 from "../assets/img/photo2.svg";
 import phone3 from "../assets/img/photo3.svg";
 import Button from "../components/Button";
-import "./Product.css";
+
 import { motion } from "framer-motion";
 const ProductArray = [
   {
@@ -45,7 +45,7 @@ const ProductArray = [
 ];
 const Products = ({ ref, variants, initial, animate, transition }) => {
   return (
-    <div className="flex flex-col items-center pb-24 px-4 sm:px-8 lg:px-20">
+    <div className="flex flex-col items-center pb-10 px-4 sm:px-8 lg:px-20 font-plus-jakarta-sans">
       <div className="flex flex-col items-center gap-2 sm:gap-5 mt-10 mb-6 sm:mb-10">
         <h1 className="text-2xl sm:text-3xl font-semibold leading-tight text-center">
           Our Products
@@ -66,7 +66,7 @@ const Products = ({ ref, variants, initial, animate, transition }) => {
               animate={animate}
               transition={transition}
               key={index}
-              className="w-full sm:w-[300px] max-w-sm p-5 rounded-md bg-white flex flex-col justify-between gap-4 border border-secondary shadow-sm"
+              className="w-full sm:w-[300px] max-w-sm p-5 rounded-md bg-white flex flex-col justify-between gap-4  shadow-sm"
             >
               <div className="flex items-center gap-3">
                 <img src={imgIcon} alt="" />
@@ -75,7 +75,7 @@ const Products = ({ ref, variants, initial, animate, transition }) => {
               <p className="text-xs text-text-color font-normal leading-5">
                 {paragraph}
               </p>
-              <div className="w-full border-t border-text-color mt-2"></div>
+              <div className="w-full  border-t-[0.75px] border-b-blue-950 mt-2"></div>
               <div className="flex flex-col justify-center pt-3">
                 <h2 className="text-sm font-medium leading-6 mb-2">
                   {heading}
@@ -91,7 +91,7 @@ const Products = ({ ref, variants, initial, animate, transition }) => {
                   ))}
                 </ul>
               </div>
-              <Button className="mt-4 text-base font-bold text-white leading-6">
+              <Button className="w-[139px] h-[48px] text-white text-base font-bold bg-secondary hover:bg-[#faad29d6]  cursor-pointer">
                 Learn More
               </Button>
             </motion.div>
