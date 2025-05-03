@@ -1,7 +1,7 @@
 import Contact from "../components/Contact";
 import image1 from "../assets/img/Image22.png";
 import image2 from "../assets/img/Image.png";
-import image3 from "../assets/img/Image.png";
+import image3 from "../assets/img/image22.png";
 import image4 from "../assets/img/Stack.png";
 import image5 from "../assets/img/Users.png";
 import image6 from "../assets/img/GlobeHemisphereWest.png";
@@ -90,42 +90,6 @@ const products = [
     text: "Streamline school administration with our all-in-one management system.",
   },
 ];
-var settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 3,
-  autoplay: true,
-  autoplaySpeed: 4000,
-  slidesToScroll: 1,
-  cssEase: "linear",
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true,
-      },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        initialSlide: 2,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-  ],
-};
 
 const AboutUs = () => {
   useEffect(() => {
