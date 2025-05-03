@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 
 import tickerIcon from "../assets/img/Iconsax.svg";
-import phone1 from "../assets/img/photo1.svg";
-import phone2 from "../assets/img/photo2.svg";
-import phone3 from "../assets/img/photo3.svg";
+import phone1 from "../assets/img/Photo1.svg";
+import phone2 from "../assets/img/Photo2.svg";
+import phone3 from "../assets/img/Photo3.svg";
 import Button from "../components/Button";
 
 import { motion } from "framer-motion";
