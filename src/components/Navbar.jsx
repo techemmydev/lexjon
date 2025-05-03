@@ -57,7 +57,7 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
-          <Button className="bg-[#FAAD29] text-white text-xs py-3 px-5 hover:bg-[#faad29d6]">
+          <Button className="bg-[#FAAD29] text-white text-xs py-3 px-5 hover:bg-[#faad29d6] font-plus-jakarta-sans font-bold">
             Get in touch
           </Button>
         </ul>
@@ -65,13 +65,15 @@ const Navbar = () => {
 
       {/* Mobile Dropdown */}
       {isOpen && (
-        <ul className="sm:hidden absolute top-[90px] left-0 w-full bg-[#091140] flex flex-col gap-4 p-5 z-40 transition-all duration-300">
+        <ul className="sm:hidden absolute  left-0 w-full bg-[#091140] flex flex-col gap-9 p-5 z-40 transition-all duration-300 h-screen top-28">
           {NavRoutes.map((route, index) => (
             <li key={index}>
               <Link
                 to={route.path}
                 className={`${
-                  isActive(route.path) ? "text-[#FAAD29]" : "text-white"
+                  isActive(route.path)
+                    ? "text-[#FAAD29] text-2xl"
+                    : "text-white text-2xl"
                 } font-bold font-plus-jakarta-sans`}
                 onClick={closeMenu}
               >
@@ -79,7 +81,7 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
-          <Button className="bg-[#FAAD29] text-white w-full py-3 text-xs hover:bg-[#faad29d6]">
+          <Button className="bg-[#FAAD29] text-white w-full py-4 text-2xl hover:bg-[#faad29d6] font-plus-jakarta-sans font-bold">
             Get in touch
           </Button>
         </ul>

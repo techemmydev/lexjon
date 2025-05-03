@@ -21,7 +21,7 @@ const contactData = [
 const Contact = () => {
   return (
     <>
-      <div className="sm:my-10 border-t-1 border-yellow-400 p-10 mt-6 font-plus-jakarta-sans">
+      <div className="sm:my-10 lg:border-t-1 lg:border-yellow-400 p-10 mt-6 font-plus-jakarta-sans border-0 ">
         <div className="sm:mx-40 lg:mx-5">
           <h3 className="text-2xl font-bold">Contact Us</h3>
           <p className="text-1xs sm:my-4 my-2 font-medium">
