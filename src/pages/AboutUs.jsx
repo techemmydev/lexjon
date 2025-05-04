@@ -130,7 +130,7 @@ const AboutUs = () => {
                 <h2
                   className={`${
                     index === 0
-                      ? " text-2xl font-bold my-5"
+                      ? " text-2xl font-bold my-5 mt-20"
                       : "text-2xl font-bold my-5"
                   }`}
                 >
@@ -216,7 +216,7 @@ const AboutUs = () => {
       </section>
 
       <Contact />
-      <section className="bg-[#091140] text-white py-10 font-plus-jakarta-sans">
+      <section className="bg-[#F6F9FC] text-white py-10 font-plus-jakarta-sans">
         <h2 className="text-center text-xl mb-6">LexJon Products</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-6xl mx-auto px-4">
           {products.map((prod, index) => (

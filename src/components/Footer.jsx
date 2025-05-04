@@ -11,32 +11,34 @@ import Button from "./Button";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#091140] text-white py-10 px-6 sm:px-10 lg:px-20 font-plus-jakarta-sans">
+    <footer className="bg-[#222222] text-white py-10 px-6 sm:px-10 lg:px-20 font-plus-jakarta-sans">
       <div className="max-w-7xl mx-auto grid gap-10 lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
         {/* Logo and Description */}
         <div className="col-span-1">
           <div className="flex items-center gap-2 mb-4">
             <img src={Logo} alt="Logo" className="h-10 w-auto" />
-            <span className="text-white font-bold text-lg">LEXJON</span>
+            <span className="text-white font-bold text-lg">
+              CA Global Digital
+            </span>
           </div>
           <p className="text-sm text-gray-300">
             Aliquam rhoncus ligula eu eros pellentesque consequat nec donec
             mattis odio.
           </p>
           <div className="flex gap-3 mt-4">
-            <span className="w-9 h-9 rounded-md bg-[#1B2243] shadow-md flex justify-center items-center hover:bg-orange-400 transition">
+            <span className="w-9 h-9 rounded-md bg-[#F3C037] shadow-md flex justify-center items-center hover:bg-orange-400 transition">
               <FaFacebookF className="text-white" />
             </span>
-            <span className="w-9 h-9 rounded-md bg-[#1B2243] shadow-md flex justify-center items-center hover:bg-orange-400 transition">
+            <span className="w-9 h-9 rounded-md bg-[#F3C037] shadow-md flex justify-center items-center hover:bg-orange-400 transition">
               <FaInstagram className="text-white" />
             </span>
-            <span className="w-9 h-9 rounded-md bg-[#1B2243]  shadow-md flex justify-center items-center hover:bg-orange-400 transition">
+            <span className="w-9 h-9 rounded-md bg-[#F3C037] shadow-md flex justify-center items-center hover:bg-orange-400 transition">
               <FaLinkedinIn className="text-white" />
             </span>
-            <span className="w-9 h-9 rounded-md bg-[#1B2243] shadow-md flex justify-center items-center hover:bg-orange-400 transition">
+            <span className="w-9 h-9 rounded-md bg-[#F3C037] shadow-md flex justify-center items-center hover:bg-orange-400 transition">
               <FaTwitter className="text-white" />
             </span>
-            <span className="w-9 h-9 rounded-md bg-[#1B2243]  shadow-md flex justify-center items-center hover:bg-orange-400 transition">
+            <span className="w-9 h-9 rounded-md bg-[#F3C037]  shadow-md flex justify-center items-center hover:bg-orange-400 transition">
               <FaYoutube className="text-white" />
             </span>
           </div>
