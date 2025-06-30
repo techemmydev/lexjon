@@ -1,7 +1,7 @@
 import Companies from "../components/Companieslogo";
 import OurExpertise from "../components/OurExpertise";
 import Testimonial from "../components/Testimonial";
-import WhyChooseUs from "../components/WhyChooseUs";
+
 import ServiceImg from "../assets/img/serviceImg1.png";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -70,7 +70,7 @@ const ServicePage = () => {
       </section>
 
       <OurExpertise />
-      <WhyChooseUs />
+
       <div className="lg:mb-10">
         <Testimonial title="Feedback from Our Clients" />
       </div>
